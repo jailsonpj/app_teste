@@ -13,7 +13,7 @@
     <!--p>Vamos bater uma foto:</p-->
     <img *ngIf="imageSrc" [src]="imageSrc">
     <ion-button (click)="abrirGaleria()">Galeria</ion-button>
-    <ion-button>Nível Glicêmico</ion-button>
+    <ion-button (click)="predictImg()">Nível Glicêmico</ion-button>
   
   </div>
 

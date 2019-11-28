@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { Tab3Page } from './tab3.page';
+import { HTTP } from '@ionic-native/http/ngx';
 /*
 import {File} from '@ionic-native/file';
 import {Transfer} from '@ionic-native/transfer';
@@ -28,5 +29,6 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [Tab3Page],
+  providers:[HTTP]
 })
 export class Tab3PageModule {}

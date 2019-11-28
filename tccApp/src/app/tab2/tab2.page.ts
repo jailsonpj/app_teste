@@ -19,7 +19,7 @@ export class Tab2Page implements OnInit {
   private API_URL = 'https://deploy-tcc.herokuapp.com/predict'
 
   private options: CameraOptions = {
-    quality: 100,
+    quality: 50,
     destinationType: this.camera.DestinationType.DATA_URL,
     encodingType: this.camera.EncodingType.JPEG,
     mediaType: this.camera.MediaType.PICTURE
