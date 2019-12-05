@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Galeria</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button  routerLink="/tabs"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+  
+    <!--p>Vamos bater uma foto:</p-->
+    <img *ngIf="imageSrc" [src]="imageSrc">
+    <ion-button (click)="abrirGaleria()">Galeria</ion-button>
+    <ion-button>Nível Glicêmico</ion-button>
+  
+  </div>
+
+</ion-content>

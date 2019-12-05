@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Câmera</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/tabs"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="ion-padding">
+
+  <!--p>Vamos bater uma foto:</p-->
+  <img *ngIf="imagem" [src]="imagem">
+  <ion-button (click)="baterFoto()">Tirar foto</ion-button>
+  <ion-button (click)="predictImg()">Nível Glicêmico</ion-button>
+  <!--p>Teste: <span id="teste"></span></p-->
+  <!--h3>{{ message }}</h3-->
+  </div>
+
+</ion-content>
+
+

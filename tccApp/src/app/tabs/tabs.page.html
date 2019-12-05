@@ -1,0 +1,33 @@
+<ion-card>
+  <img src="assets/icon/Iglycemic_v1.png">
+  <ion-card-header>
+    <ion-card-subtitle>Aplicativo</ion-card-subtitle>
+    <ion-card-title>Iglycemic</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Aplicativo para predição de nível glicêmico de alimentos para o monitoramento dietético para pacientes diabéticos.
+  </ion-card-content>
+</ion-card>
+
+
+<ion-tabs>
+
+    <ion-tab-bar slot="bottom" color="primary">
+      <ion-tab-button routerLink="/tabs">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button (click)="pushPage2()">
+        <ion-icon name="camera"></ion-icon>
+        <!--img [src]="imagem"-->
+        <ion-label>Foto</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button (click)="pushPage3()">
+        <ion-icon name="images"></ion-icon>
+        <ion-label>Galeria</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  
+  </ion-tabs>
